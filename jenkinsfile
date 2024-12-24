@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout kode dari repositori
-                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/simanjuntakalbert57/web-automation.git'
+                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
             }
         }
 
@@ -20,13 +20,13 @@ pipeline {
             steps {
                 script {
                     // Simulasi pengujian unit atau pengujian lainnya
-                    echo 'Running unit tests...'
+                    // echo 'Running unit tests...'
                     
                     // Contoh menjalankan unit test dengan command (misalnya menggunakan Maven atau npm)
-                    sh 'echo "Simulating tests... all tests passed!"'
+                    // sh 'echo "Simulating tests... all tests passed!"'
                     
                     // Jika menggunakan Maven, contoh:
-                    sh 'mvn test -PTestng -Dbrowser=chrome'
+                    // sh 'mvn test -PTestng -Dbrowser=chrome'
                 }
             }
         }
@@ -35,10 +35,10 @@ pipeline {
             steps {
                 script {
                     // Simulasi proses build
-                    echo 'Building the project...'
+                    // echo 'Building the project...'
                     
                     // Contoh build, misalnya menggunakan Maven, Gradle, atau npm
-                    sh 'echo "Simulating build... build completed!"'
+                    // sh 'echo "Simulating build... build completed!"'
                     
                     // Contoh dengan Maven:
                     // sh 'mvn clean package'
@@ -50,10 +50,10 @@ pipeline {
             steps {
                 script {
                     // Simulasi proses deployment ke server
-                    echo "Deploying to ${env.DEPLOY_SERVER}..."
+                    // echo "Deploying to ${env.DEPLOY_SERVER}..."
                     
                     // Misalnya menggunakan SSH atau SCP untuk mengirim file ke server
-                    sh 'echo "Simulating deploy... deployment success!"'
+                    // sh 'echo "Simulating deploy... deployment success!"'
                     
                     // Contoh perintah deploy:
                     // sh 'scp target/your-artifact.jar user@${env.DEPLOY_SERVER}:/path/to/deploy/'
@@ -66,21 +66,21 @@ pipeline {
 
         stage('Cleanup') {
             steps {
-                echo 'Cleaning up the environment...'
+                // echo 'Cleaning up the environment...'
                 // Membersihkan file sementara atau proses lain yang tidak dibutuhkan
             }
         }
     }
 
-    post {
-        success {
-            echo 'Pipeline berhasil! Proyek telah dibangun, diuji, dan dideploy.'
-        }
-        failure {
-            echo 'Pipeline gagal. Periksa log untuk detail kesalahan.'
-        }
-        always {
-            echo 'Pipeline selesai menjalankan semua tahap.'
-        }
-    }
+    // post {
+    //     success {
+    //         echo 'Pipeline berhasil! Proyek telah dibangun, diuji, dan dideploy.'
+    //     }
+    //     failure {
+    //         echo 'Pipeline gagal. Periksa log untuk detail kesalahan.'
+    //     }
+    //     always {
+    //         echo 'Pipeline selesai menjalankan semua tahap.'
+    //     }
+    // }
 }
