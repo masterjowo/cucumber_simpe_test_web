@@ -1,0 +1,287 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-12-24T09:28:45.660Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1571289700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Sebagai pengguna saya dapat login dengan benar (positive case)",
+        "description": "",
+        "id": "fungsi-login;sebagai-pengguna-saya-dapat-login-dengan-benar-(positive-case)",
+        "after": [
+          {
+            "result": {
+              "duration": 1193027100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.After_setUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 762265800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Diberikan  user akses halaman saucedemo.com",
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 48362000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Swag Labs\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.ketika_user_di_dalaman_user_dapat_melihat(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194715400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Dan user memasukan UserName \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_UserName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 144350000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Dan user memasukan password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113283400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Dan user mmenekan tombol login",
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_mmenekan_tombol_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1050101700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Maka user dapat melihat \"Products\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Products\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.maka_user_dapat_melihat(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2B"
+          },
+          {
+            "name": "@TestCase1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-24T09:28:50.803Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1027355700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Sebagai pengguna saya mendapatkan peringatan jika salah input saat login (negative case)",
+        "description": "",
+        "id": "fungsi-login;sebagai-pengguna-saya-mendapatkan-peringatan-jika-salah-input-saat-login-(negative-case)",
+        "after": [
+          {
+            "result": {
+              "duration": 1188189400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.After_setUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 741712900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Diberikan  user akses halaman saucedemo.com",
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57764200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Swag Labs\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.ketika_user_di_dalaman_user_dapat_melihat(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 224433200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Dan user memasukan UserName \"standard_user1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user1\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_UserName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 184797800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Dan user memasukan password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97669300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Dan user mmenekan tombol login",
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_mmenekan_tombol_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80053900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Maka user dapat melihat \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.maka_user_dapat_melihat(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2B"
+          },
+          {
+            "name": "@TestCase2"
+          }
+        ]
+      }
+    ],
+    "name": "fungsi login",
+    "description": "  Description: Kami akan menguji beberapa skenario menerapkan Tes E2E pada web site https://www.saucedemo.com/ mengunakan cucumber, testng , dan jenkins ",
+    "id": "fungsi-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]
