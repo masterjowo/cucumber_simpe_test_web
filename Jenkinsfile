@@ -7,6 +7,9 @@ pipeline {
         DEPLOY_SERVER = 'your.deploy.server'
         BRANCH_NAME = 'main'
     }
+    triggers{
+        pollSCM('* * * * *')
+    }
 
     stages {
         stage('Continuous_Checkout') {
