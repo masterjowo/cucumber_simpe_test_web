@@ -35,18 +35,21 @@ pipeline {
                 }
 
 
-        stage('Continuous_Test') {
-            steps {
-                script {
-                    // Simulasi pengujian unit atau pengujian lainnya
-                    echo 'Running unit tests...'
-                    
-                    // Contoh menjalankan unit test dengan command (misalnya menggunakan Maven atau npm)
-                    // sh 'echo "Simulating tests... all tests passed!"'
-                    
-                    // Jika menggunakan Maven, contoh:
-                    // sh 'mvn test -PTestng -Dbrowser=chrome'
+        stage('Continuous_Test_Browser ') {
+            parallel {
+                stage('Chrome '){
+                    steps {
+                        // echo 'Running tests on Chrome...'
+                        // sh 'mvn test -Dbrowser=chrome'
+                    }
                 }
+                stage('Firefox'){
+                    steps {
+                        // echo 'Running tests on Chrome...'
+                        // sh 'mvn test -Dbrowser=chrome'
+                    }
+                }
+
             }
         }
         
