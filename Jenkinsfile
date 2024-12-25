@@ -8,7 +8,9 @@ pipeline {
         BRANCH_NAME = 'main'
     }
     triggers{
+        //https://crontab.guru/
         pollSCM('* * * * *')
+
     }
 
     stages {
@@ -80,15 +82,21 @@ pipeline {
         }
     }
 
-    // post {
-    //     success {
-    //         echo 'Pipeline berhasil! Proyek telah dibangun, diuji, dan dideploy.'
-    //     }
-    //     failure {
-    //         echo 'Pipeline gagal. Periksa log untuk detail kesalahan.'
-    //     }
-    //     always {
-    //         echo 'Pipeline selesai menjalankan semua tahap.'
-    //     }
-    // }
+    post {
+        success {
+            // Kirim notifikasi ke Discord setelah build
+            discordSend description: "Jenkins Pipeline Build", 
+                        footer: "berhasil", 
+                        // link: env.BUILD_URL, 
+                        result: currentBuild.currentResult, // or   result: "#3498db",
+                        thumbnail: "https://example.com/thumbnail.png",
+                        webhookURL: "https://discord.com/api/webhooks/1306897325678923816/uIkmBEq4CNJWxNIZ3mzrVjswV4Hn8E90QA_-7iQvQ1GxuWXZmtquU6FeHzFsQdJ5fJ1R"
+        }
+        failure {
+            echo 'Pipeline gagal. Periksa log untuk detail kesalahan.'
+        }
+        always {
+            echo 'Pipeline selesai menjalankan semua tahap.'
+        }
+    }
 }
