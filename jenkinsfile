@@ -9,18 +9,34 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
+        stage('Continuous_Checkout') {
             steps {
                 // Checkout kode dari repositori
                 git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
             }
         }
 
-        stage('Test') {
+        stage('Continuous_Build') {
+                    steps {
+                        script {
+                            // Simulasi proses build
+                            // echo 'Building the project...'
+                            sh 'mvn clean install'
+                            // Contoh build, misalnya menggunakan Maven, Gradle, atau npm
+                            // sh 'echo "Simulating build... build completed!"'
+                            
+                            // Contoh dengan Maven:
+                            // sh 'mvn clean package'
+                        }
+                    }
+                }
+
+
+        stage('Continuous_Test') {
             steps {
                 script {
                     // Simulasi pengujian unit atau pengujian lainnya
-                    // echo 'Running unit tests...'
+                    echo 'Running unit tests...'
                     
                     // Contoh menjalankan unit test dengan command (misalnya menggunakan Maven atau npm)
                     // sh 'echo "Simulating tests... all tests passed!"'
@@ -30,30 +46,15 @@ pipeline {
                 }
             }
         }
-
-        stage('Build') {
-            steps {
-                script {
-                    // Simulasi proses build
-                    // echo 'Building the project...'
-                    
-                    // Contoh build, misalnya menggunakan Maven, Gradle, atau npm
-                    // sh 'echo "Simulating build... build completed!"'
-                    
-                    // Contoh dengan Maven:
-                    // sh 'mvn clean package'
-                }
-            }
-        }
-
-        stage('Deploy') {
+        
+        stage('Continuous_Deploy') {
             steps {
                 script {
                     // Simulasi proses deployment ke server
                     // echo "Deploying to ${env.DEPLOY_SERVER}..."
                     
                     // Misalnya menggunakan SSH atau SCP untuk mengirim file ke server
-                    // sh 'echo "Simulating deploy... deployment success!"'
+                    sh 'echo "Simulating deploy... deployment success!"'
                     
                     // Contoh perintah deploy:
                     // sh 'scp target/your-artifact.jar user@${env.DEPLOY_SERVER}:/path/to/deploy/'
@@ -64,9 +65,9 @@ pipeline {
             }
         }
 
-        stage('Cleanup') {
+        stage('Continuous_Cleanup') {
             steps {
-                // echo 'Cleaning up the environment...'
+                echo 'Cleaning up the environment...'
                 // Membersihkan file sementara atau proses lain yang tidak dibutuhkan
             }
         }
