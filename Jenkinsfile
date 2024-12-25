@@ -13,7 +13,7 @@ pipeline {
 
     }
 
-    stages {
+    //stages {
         // stage('Continuous_Checkout') {
         //     steps {
         //         // Checkout kode dari repositori
