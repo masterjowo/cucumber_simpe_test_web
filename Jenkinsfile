@@ -54,7 +54,7 @@ pipeline {
                     // echo "Deploying to ${env.DEPLOY_SERVER}..."
                     
                     // Misalnya menggunakan SSH atau SCP untuk mengirim file ke server
-                    sh 'echo "Simulating deploy... deployment success!"'
+                    //sh 'echo "Simulating deploy... deployment success!"'
                     
                     // Contoh perintah deploy:
                     // sh 'scp target/your-artifact.jar user@${env.DEPLOY_SERVER}:/path/to/deploy/'
