@@ -21,20 +21,7 @@ pipeline {
             }
         }
 
-        stage('Continuous_Build') {
-                    steps {
-                        script {
-                            // Simulasi proses build
-                            // echo 'Building the project...'
-                            sh 'mvn clean install'
-                            // Contoh build, misalnya menggunakan Maven, Gradle, atau npm
-                            // sh 'echo "Simulating build... build completed!"'
-                            
-                            // Contoh dengan Maven:
-                            // sh 'mvn clean package'
-                        }
-                    }
-                }
+
 
 
         stage('Continuous_Test_Browser ') {
@@ -55,6 +42,21 @@ pipeline {
 
             }
         }
+
+        stage('Continuous_Build') {
+            steps {
+                script {
+                    // Simulasi proses build
+                    // echo 'Building the project...'
+                    sh 'mvn clean install'
+                    // Contoh build, misalnya menggunakan Maven, Gradle, atau npm
+                    // sh 'echo "Simulating build... build completed!"'
+                            
+                    // Contoh dengan Maven:
+                    // sh 'mvn clean package'
+                }
+            }
+        } 
         
         stage('Continuous_Deploy_report_html') {
             steps {
@@ -86,7 +88,7 @@ pipeline {
         success {
             // Kirim notifikasi ke Discord setelah build
             discordSend description: "Jenkins Pipeline Build", 
-                        footer: "berhasil", 
+                        footer: "Pipeline berhasil! Proyek telah dibangun, diuji, dan dideploy.", 
                         // link: env.BUILD_URL, 
                         result: currentBuild.currentResult, // or   result: "#3498db",
                         thumbnail: "https://example.com/thumbnail.png",
