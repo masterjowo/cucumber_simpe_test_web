@@ -1,5 +1,5 @@
 pipeline {
-    agent any  // Menjalankan pipeline pada agen manapun yang tersedia
+    agent any  // Menjalankan pipeline pada agen manapun yang tersedia atau node atau vm 
 
     environment {
         // Definisikan variabel lingkungan jika diperlukan
