@@ -14,12 +14,12 @@ pipeline {
     }
 
     stages {
-        stage('Continuous_Checkout') {
-            steps {
-                // Checkout kode dari repositori
-                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
-            }
-        }
+        // stage('Continuous_Checkout') {
+        //     steps {
+        //         // Checkout kode dari repositori
+        //         git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
+        //     }
+        // }
 
 
 
