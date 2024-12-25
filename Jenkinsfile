@@ -37,15 +37,15 @@ pipeline {
 
         stage('Continuous_Test_Browser ') {
             parallel {
-                stage('Chrome '){
+                stage('Chrome'){
                     steps {
-                        // echo 'Running tests on Chrome...'
+                        echo 'Running tests on Chrome...'
                         // sh 'mvn test -Dbrowser=chrome'
                     }
                 }
                 stage('Firefox'){
                     steps {
-                        // echo 'Running tests on Chrome...'
+                        echo 'Running tests on Chrome...'
                         // sh 'mvn test -Dbrowser=chrome'
                     }
                 }
@@ -53,7 +53,7 @@ pipeline {
             }
         }
         
-        stage('Continuous_Deploy') {
+        stage('Continuous_Deploy_report_html') {
             steps {
                 script {
                     // Simulasi proses deployment ke server
