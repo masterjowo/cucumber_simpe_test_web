@@ -28,7 +28,7 @@ pipeline {
             parallel {
                 stage('Chrome'){
                     steps {
-                        //pwd(tmp=False)
+                        pwd()
                         echo 'Running tests on Chrome...'
                         // sh 'mvn test -Dbrowser=chrome'
                     }
