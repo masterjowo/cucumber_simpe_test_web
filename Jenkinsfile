@@ -55,13 +55,10 @@ pipeline {
                     // Contoh dengan Maven:
                     // sh 'mvn clean package'
                     sh 'ls -la'
-                    sh 'cd target
-                    cd cucumber-report
-                    
-                    '
+                    sh 'cd target'
                     sh 'ls -la'
-                    // sh 'cd cucumber-report'
-                    // sh 'ls -la'
+                    sh 'cd cucumber-report'
+                    sh 'ls -la'
                     sh 'docker compose build'
                     
                 }
