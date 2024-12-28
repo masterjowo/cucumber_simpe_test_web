@@ -5,7 +5,7 @@ pipeline {
         // Definisikan variabel lingkungan jika diperlukan
         // Misalnya untuk kredensial, server, dll.
         DEPLOY_SERVER = 'your.deploy.server'
-        BRANCH_NAME = 'main'
+        BRANCH_NAME = 'master'
     }
     triggers{
         //https://crontab.guru/
