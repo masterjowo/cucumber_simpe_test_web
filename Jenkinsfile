@@ -7,6 +7,7 @@ pipeline {
         DEPLOY_SERVER = 'your.deploy.server'
         BRANCH_NAME = 'master'
     }
+
     triggers{
         //https://crontab.guru/
         pollSCM('* * * * *')
@@ -101,6 +102,7 @@ pipeline {
             echo 'Pipeline selesai menjalankan semua tahap.'
         }
     }
-}
 
 //https://www.jenkins.io/doc/pipeline/steps/workflow-basic-steps/#pwd-determine-current-directory
+}
+
