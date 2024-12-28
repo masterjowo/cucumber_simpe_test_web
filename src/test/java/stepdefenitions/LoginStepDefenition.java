@@ -81,7 +81,7 @@ public class LoginStepDefenition {
         } else {
             Thread.sleep(1000);
             Assert.assertTrue(obj.ConditionSuccessOrFailure(URL.getTitik_url().equals(driver.getCurrentUrl())) != null);// operator ternary
-            System.out.println("gagal"+ obj.ConditionSuccessOrFailure(URL.getTitik_url().equals(driver.getCurrentUrl())))
+            System.out.println("gagal"+ obj.ConditionSuccessOrFailure(URL.getTitik_url().equals(driver.getCurrentUrl())));
         }
     }
 
