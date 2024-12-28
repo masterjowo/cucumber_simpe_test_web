@@ -9,8 +9,7 @@ pipeline {
     }
     triggers{
         //https://crontab.guru/
-        // pollSCM('* * * * *')
-
+        pollSCM('* * * * *')
     }
 
     stages {
