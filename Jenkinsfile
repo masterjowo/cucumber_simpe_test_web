@@ -59,7 +59,10 @@ pipeline {
         stage('Continuous_Deploy_report_html') {
             steps {
                 script {
-                    sh 'docker compose up -d'
+                    // sh 'docker compose up -d'
+                    sh''' cd target/cucumber-report
+                    docker compose up -d
+                     '''
                 }
             }
         }
