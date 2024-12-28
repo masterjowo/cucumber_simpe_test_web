@@ -25,6 +25,7 @@ pipeline {
                 stage('Chrome'){
                     steps {
                         sh 'pwd'
+                        sh 'll'
                         sh 'mvn test -Dbrowser=chrome'
                         echo 'Running tests on Chrome...'
                         // sh 'mvn test -Dbrowser=chrome'
