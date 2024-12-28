@@ -48,7 +48,7 @@ pipeline {
                 script {
                     // Simulasi proses build
                     // echo 'Building the project...'
-                    sh 'mvn clean install'
+                    // sh 'mvn clean install'
                     // Contoh build, misalnya menggunakan Maven, Gradle, atau npm
                     // sh 'echo "Simulating build... build completed!"'
                             
