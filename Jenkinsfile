@@ -9,7 +9,7 @@ pipeline {
     }
     triggers{
         //https://crontab.guru/
-        pollSCM('* * * * *')
+        // pollSCM('* * * * *')
 
     }
 
@@ -55,6 +55,9 @@ pipeline {
                             
                     // Contoh dengan Maven:
                     // sh 'mvn clean package'
+                    sh 'cd api_automation_v2/target/cucumber-report.html'
+                    sh 'docker compose build'
+
                 }
             }
         } 
@@ -64,10 +67,10 @@ pipeline {
                 script {
                     // Simulasi proses deployment ke server
                     // echo "Deploying to ${env.DEPLOY_SERVER}..."
-                    
-                    // Misalnya menggunakan SSH atau SCP untuk mengirim file ke server
-                    sh 'echo "Simulating deploy... deployment success!"'
-                    sh 'echo "Simulating deploy... deployment success!"'
+                    sh 'docker compose up -d'
+                    // // Misalnya menggunakan SSH atau SCP untuk mengirim file ke server
+                    // sh 'echo "Simulating deploy... deployment success!"'
+                    // sh 'echo "Simulating deploy... deployment success!"'
                     
                     // Contoh perintah deploy:
                     // sh 'scp target/your-artifact.jar user@${env.DEPLOY_SERVER}:/path/to/deploy/'
@@ -104,3 +107,4 @@ pipeline {
         }
     }
 }
+//https://www.jenkins.io/doc/pipeline/steps/workflow-basic-steps/#pwd-determine-current-directory

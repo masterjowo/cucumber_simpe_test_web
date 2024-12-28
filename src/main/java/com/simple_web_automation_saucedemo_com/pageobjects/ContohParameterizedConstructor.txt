@@ -1,0 +1,23 @@
+class ParameterizedConstructor {
+    String name;
+    int age;
+
+    // Konstruktor dengan parameter
+    ParameterizedConstructor(String name, int age) {
+        this.name = name; // Menggunakan 'this' untuk membedakan antara variabel instance dan parameter
+        this.age = age;
+    }
+
+    void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Membuat objek dengan konstruktor parameterized
+        ParameterizedConstructor obj = new ParameterizedConstructor("Alice", 25);
+        obj.displayInfo();
+    }
+}

@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-12-24T09:28:45.660Z",
+        "start_timestamp": "2024-12-28T00:01:21.976Z",
         "before": [
           {
             "result": {
-              "duration": 1571289700,
+              "duration": 2305785200,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 5,
-        "name": "Sebagai pengguna saya dapat login dengan benar (positive case)",
+        "name": "Sebagai pengguna saya dapat Checkout benar (positive case)",
         "description": "",
-        "id": "fungsi-login;sebagai-pengguna-saya-dapat-login-dengan-benar-(positive-case)",
+        "id": "fungsi-checkout;sebagai-pengguna-saya-dapat-checkout-benar-(positive-case)",
         "after": [
           {
             "result": {
-              "duration": 1193027100,
+              "duration": 1207363700,
               "status": "passed"
             },
             "match": {
@@ -35,19 +35,25 @@
         "steps": [
           {
             "result": {
-              "duration": 762265800,
+              "duration": 684793900,
               "status": "passed"
             },
             "line": 6,
-            "name": "Diberikan  user akses halaman saucedemo.com",
+            "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
             "match": {
-              "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com()"
+              "arguments": [
+                {
+                  "val": "\"https://www.saucedemo.com/\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 48362000,
+              "duration": 65897900,
               "status": "passed"
             },
             "line": 7,
@@ -65,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 194715400,
+              "duration": 231543900,
               "status": "passed"
             },
             "line": 8,
@@ -83,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 144350000,
+              "duration": 180375400,
               "status": "passed"
             },
             "line": 9,
@@ -101,11 +107,11 @@
           },
           {
             "result": {
-              "duration": 113283400,
+              "duration": 174800500,
               "status": "passed"
             },
             "line": 10,
-            "name": "Dan user mmenekan tombol login",
+            "name": "Dan user menekan tombol login",
             "match": {
               "location": "stepdefenitions.LoginStepDefenition.dan_user_mmenekan_tombol_login()"
             },
@@ -113,7 +119,401 @@
           },
           {
             "result": {
-              "duration": 1050101700,
+              "duration": 271175700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Dan user memilih barang sauce labs backpack dan barang sauce labs bike light",
+            "match": {
+              "location": "stepdefenitions.CheckoutDefenition.dan_user_memilih_barang_sauce_labs_backpack_dan_barang_sauce_labs_bike_light()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106954500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Dan user menekan tombol keranjang",
+            "match": {
+              "location": "stepdefenitions.CheckoutDefenition.dan_user_menekan_tombol_keranjang()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110553100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Dan user menekan tombol checkout",
+            "match": {
+              "location": "stepdefenitions.CheckoutDefenition.dan_user_menekan_tombol_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 537336100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Dan user memasukan nama depan \"Muhammad\" dan nama belakang \" Ramadhan\" dan kode pos \"12345\" dan menekan tombol continue",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Muhammad\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\" Ramadhan\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"12345\"",
+                  "offset": 84
+                }
+              ],
+              "location": "stepdefenitions.CheckoutDefenition.dan_user_memasukan_nama_depan_dan_nama_belakang_dan_kode_pos_dan_menekan_tombol_continue(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116297100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Dan user menekan tombol finish",
+            "match": {
+              "location": "stepdefenitions.CheckoutDefenition.dan_user_menekan_tombol_finish()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42357800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Maka user dapat melihat pemberitahuan \"Thank you for your order!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Thank you for your order!\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepdefenitions.CheckoutDefenition.maka_user_dapat_melihat_pemberitahuan(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2B"
+          },
+          {
+            "name": "@TestCase1"
+          }
+        ]
+      }
+    ],
+    "name": "fungsi Checkout",
+    "description": "  Description: Kami akan menguji beberapa skenario menerapkan Tes E2E pada web site https://www.saucedemo.com/ mengunakan cucumber, testng , dan jenkins ",
+    "id": "fungsi-checkout",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Checkout.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-12-28T00:01:28.113Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1557702200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Sebagai pengguna saya dapat memfilter dengan benar (positive case)",
+        "description": "",
+        "id": "fungsi-filter;sebagai-pengguna-saya-dapat-memfilter-dengan-benar-(positive-case)",
+        "after": [
+          {
+            "result": {
+              "duration": 1236879300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.After_setUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 769484100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.saucedemo.com/\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69782000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Swag Labs\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.ketika_user_di_dalaman_user_dapat_melihat(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 330172000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Dan user memasukan UserName \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_UserName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261276500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Dan user memasukan password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 192479700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Dan user menekan tombol login",
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_mmenekan_tombol_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 407595400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Dan user melakukan pengurutan Z ke A mengunakan fitur filter",
+            "match": {
+              "location": "stepdefenitions.FilterStepDefenition.dan_user_melakukan_pengurutan_Z_ke_A_mengunakan_fitur_filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29560700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Maka user dapat melihat pengurutan \"Name (Z to A)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name (Z to A)\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefenitions.FilterStepDefenition.maka_user_dapat_melihat_pengurutan(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2B"
+          },
+          {
+            "name": "@TestCase1"
+          }
+        ]
+      }
+    ],
+    "name": "fungsi filter",
+    "description": "  Description: Kami akan menguji beberapa skenario menerapkan Tes E2E pada web site https://www.saucedemo.com/ mengunakan cucumber, testng , dan jenkins ",
+    "id": "fungsi-filter",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Filter.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-12-28T00:01:32.988Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1707355300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Sebagai pengguna saya dapat login dengan benar (positive case)",
+        "description": "",
+        "id": "fungsi-login;sebagai-pengguna-saya-dapat-login-dengan-benar-(positive-case)",
+        "after": [
+          {
+            "result": {
+              "duration": 1274904300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.After_setUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 822849700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.saucedemo.com/\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 59615000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Swag Labs\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.ketika_user_di_dalaman_user_dapat_melihat(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 234817500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Dan user memasukan UserName \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_UserName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201024700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Dan user memasukan password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164712700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Dan user menekan tombol login",
+            "match": {
+              "location": "stepdefenitions.LoginStepDefenition.dan_user_mmenekan_tombol_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1075883800,
               "status": "passed"
             },
             "line": 11,
@@ -140,11 +540,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-24T09:28:50.803Z",
+        "start_timestamp": "2024-12-28T00:01:38.548Z",
         "before": [
           {
             "result": {
-              "duration": 1027355700,
+              "duration": 1639333800,
               "status": "passed"
             },
             "match": {
@@ -159,7 +559,7 @@
         "after": [
           {
             "result": {
-              "duration": 1188189400,
+              "duration": 1192242100,
               "status": "passed"
             },
             "match": {
@@ -172,19 +572,25 @@
         "steps": [
           {
             "result": {
-              "duration": 741712900,
+              "duration": 754202800,
               "status": "passed"
             },
             "line": 15,
-            "name": "Diberikan  user akses halaman saucedemo.com",
+            "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
             "match": {
-              "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com()"
+              "arguments": [
+                {
+                  "val": "\"https://www.saucedemo.com/\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 57764200,
+              "duration": 79446000,
               "status": "passed"
             },
             "line": 16,
@@ -202,7 +608,7 @@
           },
           {
             "result": {
-              "duration": 224433200,
+              "duration": 246244100,
               "status": "passed"
             },
             "line": 17,
@@ -220,7 +626,7 @@
           },
           {
             "result": {
-              "duration": 184797800,
+              "duration": 171419300,
               "status": "passed"
             },
             "line": 18,
@@ -238,11 +644,11 @@
           },
           {
             "result": {
-              "duration": 97669300,
+              "duration": 127043800,
               "status": "passed"
             },
             "line": 19,
-            "name": "Dan user mmenekan tombol login",
+            "name": "Dan user menekan tombol login",
             "match": {
               "location": "stepdefenitions.LoginStepDefenition.dan_user_mmenekan_tombol_login()"
             },
@@ -250,7 +656,7 @@
           },
           {
             "result": {
-              "duration": 80053900,
+              "duration": 157683400,
               "status": "passed"
             },
             "line": 20,
