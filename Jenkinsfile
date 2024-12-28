@@ -18,6 +18,7 @@ pipeline {
             steps {
                 // Checkout kode dari repositori
                 git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
+                sh 'pwd'
             }
         }
         stage('Continuous_Test_Browser ') {
