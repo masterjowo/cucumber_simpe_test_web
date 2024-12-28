@@ -18,7 +18,9 @@ pipeline {
             steps {
                 // Checkout kode dari repositori
                 git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
-                sh 'pwd'
+                sh''' cd target/cucumber-report
+                docker compose down
+                '''
             }
         }
         stage('Continuous_Test_Browser ') {
@@ -49,7 +51,6 @@ pipeline {
                     // }
                     sh''' cd target/cucumber-report
                     docker compose build
-                    
                      '''
                     
                 }
