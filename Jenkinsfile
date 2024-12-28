@@ -20,10 +20,6 @@ pipeline {
                 git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
             }
         }
-
-
-
-
         stage('Continuous_Test_Browser ') {
             parallel {
                 stage('Chrome'){
