@@ -30,9 +30,9 @@ pipeline {
                 }
                 stage('Firefox'){
                     steps {
-                        echo 'Running tests on Chrome...'
+                        // echo 'Running tests on Chrome...'
                         echo 'Running tests on Firefox...'
-                        // sh 'mvn test -Dbrowser=chrome'
+                        
                     }
                 }
 
