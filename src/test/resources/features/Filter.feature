@@ -1,7 +1,7 @@
 Feature: fungsi filter
   Description: Kami akan menguji beberapa skenario menerapkan Tes E2E pada web site https://www.saucedemo.com/ mengunakan cucumber, testng , dan jenkins 
 
-  @Sprint2B @TestCase1
+  @Sprint2B @TestCase3
   Scenario: Sebagai pengguna saya dapat memfilter dengan benar (positive case)
     Given Diberikan  user akses halaman "https://www.saucedemo.com/"
     When Ketika user di dalaman user dapat melihat "Swag Labs"

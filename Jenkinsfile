@@ -18,6 +18,7 @@ pipeline {
             steps {
                 // Checkout kode dari repositori
                 git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
+
                 sh''' cd target/cucumber-report
                 docker compose down
                 '''
@@ -36,6 +37,7 @@ pipeline {
                 stage('Firefox'){
                     steps {
                         echo 'Running tests on Firefox...'
+                        sh 'mvn test -Dbrowser=firefox'
                         
                     }
                 }
@@ -71,6 +73,7 @@ pipeline {
         stage('Continuous_Cleanup') {
             steps {
                 echo 'Cleaning up the environment...'
+                 sh 'mvn clean install'
                 // Membersihkan file sementara atau proses lain yang tidak dibutuhkan
             }
         }
