@@ -13,7 +13,7 @@ formatter.scenario({
       "name": "@Sprint2B"
     },
     {
-      "name": "@TestCase1"
+      "name": "@TestCase4"
     }
   ]
 });
@@ -148,7 +148,7 @@ formatter.scenario({
       "name": "@Sprint2B"
     },
     {
-      "name": "@TestCase1"
+      "name": "@TestCase3"
     }
   ]
 });

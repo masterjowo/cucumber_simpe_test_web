@@ -10,7 +10,7 @@ Feature: fungsi Checkout
     And Dan user menekan tombol login
     And Dan user memilih barang sauce labs backpack dan barang sauce labs bike light
     And Dan user menekan tombol keranjang
-    And Dan user menekan tombol checkouts
+    And Dan user menekan tombol checkout
     And Dan user memasukan nama depan "Muhammad" dan nama belakang " Ramadhan" dan kode pos "12345" dan menekan tombol continue
     And Dan user menekan tombol finish
     Then Maka user dapat melihat pemberitahuan "Thank you for your order!"
