@@ -29,7 +29,7 @@ pipeline {
                         sh 'mvn test'
                         sh 'mvn test -Dbrowser=chrome'
                         echo 'Running tests on Chrome...'
-                        // sh 'mvn test -Dbrowser=chrome'
+                        // sh 'mvn test -Dbrowser=chrome'//
                     }
                 }
                 stage('Firefox'){
