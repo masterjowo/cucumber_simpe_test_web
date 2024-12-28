@@ -25,8 +25,7 @@ pipeline {
             parallel {
                 stage('Chrome'){
                     steps {
-                        sh 'pwd'
-                        sh 'mvn test'
+                        //sh 'mvn test'
                         sh 'mvn test -Dbrowser=chrome'
                         echo 'Running tests on Chrome...'
                         // sh 'mvn test -Dbrowser=chrome'//
@@ -34,7 +33,6 @@ pipeline {
                 }
                 stage('Firefox'){
                     steps {
-                        // echo 'Running tests on Chrome...'
                         echo 'Running tests on Firefox...'
                         
                     }
@@ -46,23 +44,13 @@ pipeline {
         stage('Continuous_Build') {
             steps {
                 script {
-                    // Simulasi proses build
-                    // echo 'Building the project...'
-                    // sh 'mvn clean install'
-                    // Contoh build, misalnya menggunakan Maven, Gradle, atau npm
-                    // sh 'echo "Simulating build... build completed!"'
-                            
-                    // Contoh dengan Maven:
-                    // sh 'mvn clean package'
-                    // sh 'ls -la'
-                    // sh 'cd target'
-                    // sh 'ls -la'
-                    // sh 'cd cucumber-report'
-                    // sh 'ls -la'
-                    // sh 'docker compose build'
-                    dir('/Hasil_Test_Web_UI_Mengunakan_Testng_Dan_Cucumber_Versi_Final/target/cucumber-report') {
-                        sh 'docker compose build'
-                    }
+                    // dir('/Hasil_Test_Web_UI_Mengunakan_Testng_Dan_Cucumber_Versi_Final/target/cucumber-report') {
+                    //     sh 'docker compose build'
+                    // }
+                    sh''' cd target/cucumber-report
+                    docker compose build
+                    
+                     '''
                     
                 }
             }
@@ -71,18 +59,7 @@ pipeline {
         stage('Continuous_Deploy_report_html') {
             steps {
                 script {
-                    // Simulasi proses deployment ke server
-                    // echo "Deploying to ${env.DEPLOY_SERVER}..."
                     sh 'docker compose up -d'
-                    // // Misalnya menggunakan SSH atau SCP untuk mengirim file ke server
-                    // sh 'echo "Simulating deploy... deployment success!"'
-                    // sh 'echo "Simulating deploy... deployment success!"'
-                    
-                    // Contoh perintah deploy:
-                    // sh 'scp target/your-artifact.jar user@${env.DEPLOY_SERVER}:/path/to/deploy/'
-
-                    // Jika menggunakan Ansible atau Docker:
-                    // sh 'ansible-playbook deploy.yml'
                 }
             }
         }
