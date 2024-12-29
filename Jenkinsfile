@@ -41,7 +41,7 @@ pipeline {
                 stage('Firefox'){
                     steps {
                         echo 'Running tests on Firefox...'
-                        // sh 'mvn test -Dbrowser=firefox'
+                        sh 'mvn test -Dbrowser=firefox'
                         
                     }
                 }
