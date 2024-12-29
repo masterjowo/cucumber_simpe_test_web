@@ -3,12 +3,13 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-12-29T09:37:35.108Z",
+        "start_timestamp": "2024-12-29T12:49:47.261Z",
         "before": [
           {
             "result": {
-              "duration": 2706809500,
-              "status": "passed"
+              "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
+              "duration": 10333700,
+              "status": "failed"
             },
             "match": {
               "location": "stepdefenitions.LoginStepDefenition.setUp()"
@@ -22,7 +23,7 @@
         "after": [
           {
             "result": {
-              "duration": 1272473500,
+              "duration": 1002326400,
               "status": "passed"
             },
             "match": {
@@ -35,8 +36,8 @@
         "steps": [
           {
             "result": {
-              "duration": 795973500,
-              "status": "passed"
+              "duration": 2011000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
@@ -53,8 +54,8 @@
           },
           {
             "result": {
-              "duration": 104612700,
-              "status": "passed"
+              "duration": 1006900,
+              "status": "skipped"
             },
             "line": 7,
             "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
@@ -71,8 +72,7 @@
           },
           {
             "result": {
-              "duration": 307012900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Dan user memasukan UserName \"standard_user\"",
@@ -89,8 +89,8 @@
           },
           {
             "result": {
-              "duration": 210627200,
-              "status": "passed"
+              "duration": 996500,
+              "status": "skipped"
             },
             "line": 9,
             "name": "Dan user memasukan password \"secret_sauce\"",
@@ -107,8 +107,7 @@
           },
           {
             "result": {
-              "duration": 162079100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Dan user menekan tombol login",
@@ -119,8 +118,8 @@
           },
           {
             "result": {
-              "duration": 219856400,
-              "status": "passed"
+              "duration": 1004700,
+              "status": "skipped"
             },
             "line": 11,
             "name": "Dan user memilih barang sauce labs backpack dan barang sauce labs bike light",
@@ -131,8 +130,8 @@
           },
           {
             "result": {
-              "duration": 140589400,
-              "status": "passed"
+              "duration": 999500,
+              "status": "skipped"
             },
             "line": 12,
             "name": "Dan user menekan tombol keranjang",
@@ -143,8 +142,8 @@
           },
           {
             "result": {
-              "duration": 115503200,
-              "status": "passed"
+              "duration": 1001200,
+              "status": "skipped"
             },
             "line": 13,
             "name": "Dan user menekan tombol checkout",
@@ -155,8 +154,8 @@
           },
           {
             "result": {
-              "duration": 526400300,
-              "status": "passed"
+              "duration": 1997300,
+              "status": "skipped"
             },
             "line": 14,
             "name": "Dan user memasukan nama depan \"Muhammad\" dan nama belakang \" Ramadhan\" dan kode pos \"12345\" dan menekan tombol continue",
@@ -181,8 +180,8 @@
           },
           {
             "result": {
-              "duration": 111661100,
-              "status": "passed"
+              "duration": 1000400,
+              "status": "skipped"
             },
             "line": 15,
             "name": "Dan user menekan tombol finish",
@@ -193,8 +192,8 @@
           },
           {
             "result": {
-              "duration": 34003300,
-              "status": "passed"
+              "duration": 1040900,
+              "status": "skipped"
             },
             "line": 16,
             "name": "Maka user dapat melihat pemberitahuan \"Thank you for your order!\"",
@@ -231,12 +230,13 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-12-29T09:37:41.923Z",
+        "start_timestamp": "2024-12-29T12:49:48.359Z",
         "before": [
           {
             "result": {
-              "duration": 1936742600,
-              "status": "passed"
+              "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
+              "duration": 587300,
+              "status": "failed"
             },
             "match": {
               "location": "stepdefenitions.LoginStepDefenition.setUp()"
@@ -250,7 +250,7 @@
         "after": [
           {
             "result": {
-              "duration": 1188201100,
+              "duration": 1004463800,
               "status": "passed"
             },
             "match": {
@@ -263,8 +263,8 @@
         "steps": [
           {
             "result": {
-              "duration": 800161500,
-              "status": "passed"
+              "duration": 1489500,
+              "status": "skipped"
             },
             "line": 6,
             "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
@@ -281,8 +281,7 @@
           },
           {
             "result": {
-              "duration": 163869600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
@@ -299,8 +298,7 @@
           },
           {
             "result": {
-              "duration": 260721200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Dan user memasukan UserName \"standard_user\"",
@@ -317,8 +315,7 @@
           },
           {
             "result": {
-              "duration": 102495700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Dan user memasukan password \"secret_sauce\"",
@@ -335,8 +332,7 @@
           },
           {
             "result": {
-              "duration": 206975200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Dan user menekan tombol login",
@@ -347,8 +343,8 @@
           },
           {
             "result": {
-              "duration": 564684700,
-              "status": "passed"
+              "duration": 999800,
+              "status": "skipped"
             },
             "line": 11,
             "name": "Dan user melakukan pengurutan Z ke A mengunakan fitur filter",
@@ -359,8 +355,7 @@
           },
           {
             "result": {
-              "duration": 47419600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "Maka user dapat melihat pengurutan \"Name (Z to A)\"",
@@ -397,12 +392,13 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-12-29T09:37:47.215Z",
+        "start_timestamp": "2024-12-29T12:49:49.383Z",
         "before": [
           {
             "result": {
-              "duration": 2034288900,
-              "status": "passed"
+              "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
+              "duration": 1002700,
+              "status": "failed"
             },
             "match": {
               "location": "stepdefenitions.LoginStepDefenition.setUp()"
@@ -416,7 +412,7 @@
         "after": [
           {
             "result": {
-              "duration": 1220380300,
+              "duration": 1006110500,
               "status": "passed"
             },
             "match": {
@@ -429,8 +425,8 @@
         "steps": [
           {
             "result": {
-              "duration": 808599600,
-              "status": "passed"
+              "duration": 995700,
+              "status": "skipped"
             },
             "line": 6,
             "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
@@ -447,8 +443,7 @@
           },
           {
             "result": {
-              "duration": 46534400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
@@ -465,8 +460,7 @@
           },
           {
             "result": {
-              "duration": 180719900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Dan user memasukan UserName \"standard_user\"",
@@ -483,8 +477,7 @@
           },
           {
             "result": {
-              "duration": 134714500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Dan user memasukan password \"secret_sauce\"",
@@ -501,8 +494,7 @@
           },
           {
             "result": {
-              "duration": 233641000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Dan user menekan tombol login",
@@ -513,8 +505,8 @@
           },
           {
             "result": {
-              "duration": 1109540500,
-              "status": "passed"
+              "duration": 983800,
+              "status": "skipped"
             },
             "line": 11,
             "name": "Maka user dapat melihat \"Products\"",
@@ -540,12 +532,13 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-29T09:37:53.011Z",
+        "start_timestamp": "2024-12-29T12:49:50.405Z",
         "before": [
           {
             "result": {
-              "duration": 1990352400,
-              "status": "passed"
+              "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
+              "duration": 611900,
+              "status": "failed"
             },
             "match": {
               "location": "stepdefenitions.LoginStepDefenition.setUp()"
@@ -559,7 +552,7 @@
         "after": [
           {
             "result": {
-              "duration": 1190182500,
+              "duration": 1011201600,
               "status": "passed"
             },
             "match": {
@@ -572,8 +565,7 @@
         "steps": [
           {
             "result": {
-              "duration": 911656700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
@@ -590,8 +582,7 @@
           },
           {
             "result": {
-              "duration": 42269900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
@@ -608,8 +599,8 @@
           },
           {
             "result": {
-              "duration": 131365100,
-              "status": "passed"
+              "duration": 998900,
+              "status": "skipped"
             },
             "line": 17,
             "name": "Dan user memasukan UserName \"standard_user1\"",
@@ -626,8 +617,7 @@
           },
           {
             "result": {
-              "duration": 121824400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "Dan user memasukan password \"secret_sauce\"",
@@ -644,8 +634,8 @@
           },
           {
             "result": {
-              "duration": 175913500,
-              "status": "passed"
+              "duration": 1000800,
+              "status": "skipped"
             },
             "line": 19,
             "name": "Dan user menekan tombol login",
@@ -656,8 +646,7 @@
           },
           {
             "result": {
-              "duration": 178751300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "Maka user dapat melihat \"Epic sadface: Username and password do not match any user in this service\"",
