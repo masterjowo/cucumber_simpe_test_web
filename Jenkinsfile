@@ -7,10 +7,7 @@ pipeline {
         DEPLOY_SERVER = 'your.deploy.server'
         BRANCH_NAME = 'master'
     }
-        tools {
-        maven "MAVEN"
-        jdk "JDK"
-    }
+
 
     triggers{
         //https://crontab.guru///
