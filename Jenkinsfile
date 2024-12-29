@@ -13,7 +13,7 @@ pipeline {
     }
 
     triggers{
-        //https://crontab.guru//
+        //https://crontab.guru///
         pollSCM('* * * * *')
     }
 
