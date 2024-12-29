@@ -3,6 +3,7 @@ package com.simple_web_automation_saucedemo_com.singleton;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverSingleton {
     private static WebDriver driver; // Variabel static untuk instance tunggal
@@ -20,9 +21,12 @@ public class DriverSingleton {
             String browser = System.getProperty("browser", "chrome"); // Ambil nilai browser (default chrome)
             switch (browser.toLowerCase()) {
                 case "chrome":
+                    //System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
                     driver = new ChromeDriver();
                     break;
                 case "firefox":
+                    // System.setProperty("webdriver.gecko.driver", "path/to/geckodriver");
+                    // driver = new FirefoxDriver();
                     System.out.println("Browser Firefox belum didukung atau server belum diatur untuk browser ini");
                 default:
                     throw new IllegalArgumentException("Browser yang diberikan tidak didukung: " + browser);
