@@ -18,8 +18,7 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
@@ -29,7 +28,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
@@ -39,7 +38,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.ketika_user_di_dalaman_user_dapat_melihat(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user memasukan UserName \"standard_user\"",
@@ -49,7 +48,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_UserName(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user memasukan password \"secret_sauce\"",
@@ -59,7 +58,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_password(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user menekan tombol login",
@@ -69,7 +68,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_mmenekan_tombol_login()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user memilih barang sauce labs backpack dan barang sauce labs bike light",
@@ -79,7 +78,7 @@ formatter.match({
   "location": "stepdefenitions.CheckoutDefenition.dan_user_memilih_barang_sauce_labs_backpack_dan_barang_sauce_labs_bike_light()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user menekan tombol keranjang",
@@ -89,7 +88,7 @@ formatter.match({
   "location": "stepdefenitions.CheckoutDefenition.dan_user_menekan_tombol_keranjang()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user menekan tombol checkout",
@@ -99,7 +98,7 @@ formatter.match({
   "location": "stepdefenitions.CheckoutDefenition.dan_user_menekan_tombol_checkout()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user memasukan nama depan \"Muhammad\" dan nama belakang \" Ramadhan\" dan kode pos \"12345\" dan menekan tombol continue",
@@ -109,7 +108,7 @@ formatter.match({
   "location": "stepdefenitions.CheckoutDefenition.dan_user_memasukan_nama_depan_dan_nama_belakang_dan_kode_pos_dan_menekan_tombol_continue(java.lang.String,java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user menekan tombol finish",
@@ -119,7 +118,7 @@ formatter.match({
   "location": "stepdefenitions.CheckoutDefenition.dan_user_menekan_tombol_finish()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Maka user dapat melihat pemberitahuan \"Thank you for your order!\"",
@@ -129,7 +128,7 @@ formatter.match({
   "location": "stepdefenitions.CheckoutDefenition.maka_user_dapat_melihat_pemberitahuan(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -154,8 +153,7 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
@@ -165,7 +163,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
@@ -175,7 +173,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.ketika_user_di_dalaman_user_dapat_melihat(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user memasukan UserName \"standard_user\"",
@@ -185,7 +183,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_UserName(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user memasukan password \"secret_sauce\"",
@@ -195,7 +193,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_password(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user menekan tombol login",
@@ -205,7 +203,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_mmenekan_tombol_login()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user melakukan pengurutan Z ke A mengunakan fitur filter",
@@ -215,7 +213,7 @@ formatter.match({
   "location": "stepdefenitions.FilterStepDefenition.dan_user_melakukan_pengurutan_Z_ke_A_mengunakan_fitur_filter()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Maka user dapat melihat pengurutan \"Name (Z to A)\"",
@@ -225,7 +223,7 @@ formatter.match({
   "location": "stepdefenitions.FilterStepDefenition.maka_user_dapat_melihat_pengurutan(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -250,8 +248,7 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
@@ -261,7 +258,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
@@ -271,7 +268,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.ketika_user_di_dalaman_user_dapat_melihat(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user memasukan UserName \"standard_user\"",
@@ -281,7 +278,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_UserName(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user memasukan password \"secret_sauce\"",
@@ -291,7 +288,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_password(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user menekan tombol login",
@@ -301,7 +298,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_mmenekan_tombol_login()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Maka user dapat melihat \"Products\"",
@@ -311,7 +308,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.maka_user_dapat_melihat(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -330,8 +327,7 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Diberikan  user akses halaman \"https://www.saucedemo.com/\"",
@@ -341,7 +337,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.diberikan_user_akses_halaman_saucedemo_com(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Ketika user di dalaman user dapat melihat \"Swag Labs\"",
@@ -351,7 +347,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.ketika_user_di_dalaman_user_dapat_melihat(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user memasukan UserName \"standard_user1\"",
@@ -361,7 +357,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_UserName(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user memasukan password \"secret_sauce\"",
@@ -371,7 +367,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_memasukan_password(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Dan user menekan tombol login",
@@ -381,7 +377,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.dan_user_mmenekan_tombol_login()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Maka user dapat melihat \"Epic sadface: Username and password do not match any user in this service\"",
@@ -391,7 +387,7 @@ formatter.match({
   "location": "stepdefenitions.LoginStepDefenition.maka_user_dapat_melihat(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"

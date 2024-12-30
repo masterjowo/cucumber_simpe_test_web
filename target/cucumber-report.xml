@@ -1,65 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="4.327">
-    <testcase classname="fungsi Checkout" name="Sebagai pengguna saya dapat Checkout benar (positive case)" time="1.095">
-        <failure message="Browser yang diberikan tidak didukung: firefox" type="java.lang.IllegalArgumentException"><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............skipped
-When Ketika user di dalaman user dapat melihat "Swag Labs"..................skipped
-And Dan user memasukan UserName "standard_user".............................skipped
-And Dan user memasukan password "secret_sauce"..............................skipped
-And Dan user menekan tombol login...........................................skipped
-And Dan user memilih barang sauce labs backpack dan barang sauce labs bike light.skipped
-And Dan user menekan tombol keranjang.......................................skipped
-And Dan user menekan tombol checkout........................................skipped
-And Dan user memasukan nama depan "Muhammad" dan nama belakang " Ramadhan" dan kode pos "12345" dan menekan tombol continue.skipped
-And Dan user menekan tombol finish..........................................skipped
-Then Maka user dapat melihat pemberitahuan "Thank you for your order!"......skipped
-
-StackTrace:
-java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox
-	at com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)
-	at stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="25.266">
+    <testcase classname="fungsi Checkout" name="Sebagai pengguna saya dapat Checkout benar (positive case)" time="9.623">
+        <system-out><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............passed
+When Ketika user di dalaman user dapat melihat "Swag Labs"..................passed
+And Dan user memasukan UserName "standard_user".............................passed
+And Dan user memasukan password "secret_sauce"..............................passed
+And Dan user menekan tombol login...........................................passed
+And Dan user memilih barang sauce labs backpack dan barang sauce labs bike light.passed
+And Dan user menekan tombol keranjang.......................................passed
+And Dan user menekan tombol checkout........................................passed
+And Dan user memasukan nama depan "Muhammad" dan nama belakang " Ramadhan" dan kode pos "12345" dan menekan tombol continue.passed
+And Dan user menekan tombol finish..........................................passed
+Then Maka user dapat melihat pemberitahuan "Thank you for your order!"......passed
+]]></system-out>
     </testcase>
-    <testcase classname="fungsi filter" name="Sebagai pengguna saya dapat memfilter dengan benar (positive case)" time="1.014">
-        <failure message="Browser yang diberikan tidak didukung: firefox" type="java.lang.IllegalArgumentException"><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............skipped
-When Ketika user di dalaman user dapat melihat "Swag Labs"..................skipped
-And Dan user memasukan UserName "standard_user".............................skipped
-And Dan user memasukan password "secret_sauce"..............................skipped
-And Dan user menekan tombol login...........................................skipped
-And Dan user melakukan pengurutan Z ke A mengunakan fitur filter............skipped
-Then Maka user dapat melihat pengurutan "Name (Z to A)".....................skipped
-
-StackTrace:
-java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox
-	at com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)
-	at stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)
-]]></failure>
+    <testcase classname="fungsi filter" name="Sebagai pengguna saya dapat memfilter dengan benar (positive case)" time="4.771">
+        <system-out><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............passed
+When Ketika user di dalaman user dapat melihat "Swag Labs"..................passed
+And Dan user memasukan UserName "standard_user".............................passed
+And Dan user memasukan password "secret_sauce"..............................passed
+And Dan user menekan tombol login...........................................passed
+And Dan user melakukan pengurutan Z ke A mengunakan fitur filter............passed
+Then Maka user dapat melihat pengurutan "Name (Z to A)".....................passed
+]]></system-out>
     </testcase>
-    <testcase classname="fungsi login" name="Sebagai pengguna saya dapat login dengan benar (positive case)" time="1.01">
-        <failure message="Browser yang diberikan tidak didukung: firefox" type="java.lang.IllegalArgumentException"><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............skipped
-When Ketika user di dalaman user dapat melihat "Swag Labs"..................skipped
-And Dan user memasukan UserName "standard_user".............................skipped
-And Dan user memasukan password "secret_sauce"..............................skipped
-And Dan user menekan tombol login...........................................skipped
-Then Maka user dapat melihat "Products".....................................skipped
-
-StackTrace:
-java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox
-	at com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)
-	at stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)
-]]></failure>
+    <testcase classname="fungsi login" name="Sebagai pengguna saya dapat login dengan benar (positive case)" time="5.904">
+        <system-out><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............passed
+When Ketika user di dalaman user dapat melihat "Swag Labs"..................passed
+And Dan user memasukan UserName "standard_user".............................passed
+And Dan user memasukan password "secret_sauce"..............................passed
+And Dan user menekan tombol login...........................................passed
+Then Maka user dapat melihat "Products".....................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="fungsi login" name="Sebagai pengguna saya mendapatkan peringatan jika salah input saat login (negative case)" time="1.009">
-        <failure message="Browser yang diberikan tidak didukung: firefox" type="java.lang.IllegalArgumentException"><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............skipped
-When Ketika user di dalaman user dapat melihat "Swag Labs"..................skipped
-And Dan user memasukan UserName "standard_user1"............................skipped
-And Dan user memasukan password "secret_sauce"..............................skipped
-And Dan user menekan tombol login...........................................skipped
-Then Maka user dapat melihat "Epic sadface: Username and password do not match any user in this service".skipped
-
-StackTrace:
-java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox
-	at com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)
-	at stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)
-]]></failure>
+    <testcase classname="fungsi login" name="Sebagai pengguna saya mendapatkan peringatan jika salah input saat login (negative case)" time="4.689">
+        <system-out><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............passed
+When Ketika user di dalaman user dapat melihat "Swag Labs"..................passed
+And Dan user memasukan UserName "standard_user1"............................passed
+And Dan user memasukan password "secret_sauce"..............................passed
+And Dan user menekan tombol login...........................................passed
+Then Maka user dapat melihat "Epic sadface: Username and password do not match any user in this service".passed
+]]></system-out>
     </testcase>
 </testsuite>

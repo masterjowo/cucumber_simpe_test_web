@@ -1,0 +1,7 @@
+com\simple_web_automation_saucedemo_com\pageobjects\HomePage.class
+com\simple_web_automation_saucedemo_com\pageobjects\keranjangPage.class
+com\simple_web_automation_saucedemo_com\pageobjects\CheckoutStepOnePage.class
+com\simple_web_automation_saucedemo_com\pageobjects\CheckoutCompletePage.class
+com\simple_web_automation_saucedemo_com\pageobjects\CheckoutStepTwoPage.class
+com\simple_web_automation_saucedemo_com\pageobjects\LoginPage.class
+com\simple_web_automation_saucedemo_com\singleton\DriverSingleton.class

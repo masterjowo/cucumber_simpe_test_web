@@ -1,3 +1,0 @@
-1. Manyimpan element
-2. Hanya untuk melakukan action
-3. Disarankan tidak digunakan untuk melakukan assertion
