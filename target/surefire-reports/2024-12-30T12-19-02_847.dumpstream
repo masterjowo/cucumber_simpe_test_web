@@ -1,5 +1,4 @@
-# Created at 2024-12-29T07:06:39.490
+# Created at 2024-12-30T12:19:03.443
 Boot Manifest-JAR contains absolute paths in classpath 'E:\QA\QA1\simple_web_automation_saucedemo_com\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
 

@@ -6,4 +6,4 @@ services:
     image: hasil_test_web_saucedemo_com # Menentukan nama image secara spesifik
     ports:
       - "9432:80" # Port host 8080 ke port container 80
-    container_name: hasil_test_web_saucedemo_com # Nama container
+    container_name: hasil_test_web_saucedemo_com # Nama container 
