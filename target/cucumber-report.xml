@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="19.352">
     <testcase classname="fungsi Checkout" name="Sebagai pengguna saya dapat Checkout benar (positive case)" time="5.911">
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="25.266">
+    <testcase classname="fungsi Checkout" name="Sebagai pengguna saya dapat Checkout benar (positive case)" time="9.623">
+>>>>>>> 8138389e164b574b106dc46f8e738daa49009a44
         <system-out><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............passed
 When Ketika user di dalaman user dapat melihat "Swag Labs"..................passed
 And Dan user memasukan UserName "standard_user".............................passed
@@ -14,7 +19,11 @@ And Dan user menekan tombol finish..........................................pass
 Then Maka user dapat melihat pemberitahuan "Thank you for your order!"......passed
 ]]></system-out>
     </testcase>
+<<<<<<< HEAD
     <testcase classname="fungsi filter" name="Sebagai pengguna saya dapat memfilter dengan benar (positive case)" time="4.168">
+=======
+    <testcase classname="fungsi filter" name="Sebagai pengguna saya dapat memfilter dengan benar (positive case)" time="4.771">
+>>>>>>> 8138389e164b574b106dc46f8e738daa49009a44
         <system-out><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............passed
 When Ketika user di dalaman user dapat melihat "Swag Labs"..................passed
 And Dan user memasukan UserName "standard_user".............................passed
@@ -24,7 +33,11 @@ And Dan user melakukan pengurutan Z ke A mengunakan fitur filter............pass
 Then Maka user dapat melihat pengurutan "Name (Z to A)".....................passed
 ]]></system-out>
     </testcase>
+<<<<<<< HEAD
     <testcase classname="fungsi login" name="Sebagai pengguna saya dapat login dengan benar (positive case)" time="4.916">
+=======
+    <testcase classname="fungsi login" name="Sebagai pengguna saya dapat login dengan benar (positive case)" time="5.904">
+>>>>>>> 8138389e164b574b106dc46f8e738daa49009a44
         <system-out><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............passed
 When Ketika user di dalaman user dapat melihat "Swag Labs"..................passed
 And Dan user memasukan UserName "standard_user".............................passed
@@ -33,7 +46,11 @@ And Dan user menekan tombol login...........................................pass
 Then Maka user dapat melihat "Products".....................................passed
 ]]></system-out>
     </testcase>
+<<<<<<< HEAD
     <testcase classname="fungsi login" name="Sebagai pengguna saya mendapatkan peringatan jika salah input saat login (negative case)" time="4.111">
+=======
+    <testcase classname="fungsi login" name="Sebagai pengguna saya mendapatkan peringatan jika salah input saat login (negative case)" time="4.689">
+>>>>>>> 8138389e164b574b106dc46f8e738daa49009a44
         <system-out><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............passed
 When Ketika user di dalaman user dapat melihat "Swag Labs"..................passed
 And Dan user memasukan UserName "standard_user1"............................passed
