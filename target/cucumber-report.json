@@ -3,12 +3,12 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-12-29T12:49:47.261Z",
+        "start_timestamp": "2024-12-30T04:21:12.355Z",
         "before": [
           {
             "result": {
               "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
-              "duration": 10333700,
+              "duration": 3906300,
               "status": "failed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "after": [
           {
             "result": {
-              "duration": 1002326400,
+              "duration": 1001044700,
               "status": "passed"
             },
             "match": {
@@ -36,7 +36,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2011000,
+              "duration": 1963900,
               "status": "skipped"
             },
             "line": 6,
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 1006900,
+              "duration": 980100,
               "status": "skipped"
             },
             "line": 7,
@@ -72,6 +72,7 @@
           },
           {
             "result": {
+              "duration": 981800,
               "status": "skipped"
             },
             "line": 8,
@@ -89,7 +90,7 @@
           },
           {
             "result": {
-              "duration": 996500,
+              "duration": 978800,
               "status": "skipped"
             },
             "line": 9,
@@ -107,6 +108,7 @@
           },
           {
             "result": {
+              "duration": 1509400,
               "status": "skipped"
             },
             "line": 10,
@@ -118,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 1004700,
+              "duration": 1963500,
               "status": "skipped"
             },
             "line": 11,
@@ -130,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 999500,
+              "duration": 977100,
               "status": "skipped"
             },
             "line": 12,
@@ -142,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 1001200,
+              "duration": 975600,
               "status": "skipped"
             },
             "line": 13,
@@ -154,7 +156,7 @@
           },
           {
             "result": {
-              "duration": 1997300,
+              "duration": 982000,
               "status": "skipped"
             },
             "line": 14,
@@ -180,7 +182,7 @@
           },
           {
             "result": {
-              "duration": 1000400,
+              "duration": 979600,
               "status": "skipped"
             },
             "line": 15,
@@ -192,7 +194,6 @@
           },
           {
             "result": {
-              "duration": 1040900,
               "status": "skipped"
             },
             "line": 16,
@@ -230,12 +231,12 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-12-29T12:49:48.359Z",
+        "start_timestamp": "2024-12-30T04:21:13.469Z",
         "before": [
           {
             "result": {
               "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
-              "duration": 587300,
+              "duration": 975500,
               "status": "failed"
             },
             "match": {
@@ -250,7 +251,7 @@
         "after": [
           {
             "result": {
-              "duration": 1004463800,
+              "duration": 1001568700,
               "status": "passed"
             },
             "match": {
@@ -263,7 +264,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1489500,
+              "duration": 975600,
               "status": "skipped"
             },
             "line": 6,
@@ -281,6 +282,7 @@
           },
           {
             "result": {
+              "duration": 978300,
               "status": "skipped"
             },
             "line": 7,
@@ -315,6 +317,7 @@
           },
           {
             "result": {
+              "duration": 1506600,
               "status": "skipped"
             },
             "line": 9,
@@ -343,7 +346,7 @@
           },
           {
             "result": {
-              "duration": 999800,
+              "duration": 975300,
               "status": "skipped"
             },
             "line": 11,
@@ -355,6 +358,7 @@
           },
           {
             "result": {
+              "duration": 984100,
               "status": "skipped"
             },
             "line": 12,
@@ -392,12 +396,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-12-29T12:49:49.383Z",
+        "start_timestamp": "2024-12-30T04:21:14.493Z",
         "before": [
           {
             "result": {
               "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
-              "duration": 1002700,
               "status": "failed"
             },
             "match": {
@@ -412,7 +415,7 @@
         "after": [
           {
             "result": {
-              "duration": 1006110500,
+              "duration": 1000910200,
               "status": "passed"
             },
             "match": {
@@ -425,7 +428,6 @@
         "steps": [
           {
             "result": {
-              "duration": 995700,
               "status": "skipped"
             },
             "line": 6,
@@ -443,6 +445,7 @@
           },
           {
             "result": {
+              "duration": 983600,
               "status": "skipped"
             },
             "line": 7,
@@ -460,6 +463,7 @@
           },
           {
             "result": {
+              "duration": 976600,
               "status": "skipped"
             },
             "line": 8,
@@ -477,6 +481,7 @@
           },
           {
             "result": {
+              "duration": 982400,
               "status": "skipped"
             },
             "line": 9,
@@ -505,7 +510,6 @@
           },
           {
             "result": {
-              "duration": 983800,
               "status": "skipped"
             },
             "line": 11,
@@ -532,12 +536,12 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-29T12:49:50.405Z",
+        "start_timestamp": "2024-12-30T04:21:15.513Z",
         "before": [
           {
             "result": {
               "error_message": "java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firefox\r\n\tat com.simple_web_automation_saucedemo_com.singleton.DriverSingleton.getDriver(DriverSingleton.java:32)\r\n\tat stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)\r\n",
-              "duration": 611900,
+              "duration": 974800,
               "status": "failed"
             },
             "match": {
@@ -552,7 +556,7 @@
         "after": [
           {
             "result": {
-              "duration": 1011201600,
+              "duration": 1000907700,
               "status": "passed"
             },
             "match": {
@@ -599,7 +603,7 @@
           },
           {
             "result": {
-              "duration": 998900,
+              "duration": 2972200,
               "status": "skipped"
             },
             "line": 17,
@@ -617,6 +621,7 @@
           },
           {
             "result": {
+              "duration": 975900,
               "status": "skipped"
             },
             "line": 18,
@@ -634,7 +639,6 @@
           },
           {
             "result": {
-              "duration": 1000800,
               "status": "skipped"
             },
             "line": 19,

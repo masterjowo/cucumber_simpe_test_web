@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="4.256">
-    <testcase classname="fungsi Checkout" name="Sebagai pengguna saya dapat Checkout benar (positive case)" time="1.083">
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="4.327">
+    <testcase classname="fungsi Checkout" name="Sebagai pengguna saya dapat Checkout benar (positive case)" time="1.095">
         <failure message="Browser yang diberikan tidak didukung: firefox" type="java.lang.IllegalArgumentException"><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............skipped
 When Ketika user di dalaman user dapat melihat "Swag Labs"..................skipped
 And Dan user memasukan UserName "standard_user".............................skipped
@@ -19,7 +19,7 @@ java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firef
 	at stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)
 ]]></failure>
     </testcase>
-    <testcase classname="fungsi filter" name="Sebagai pengguna saya dapat memfilter dengan benar (positive case)" time="1.013">
+    <testcase classname="fungsi filter" name="Sebagai pengguna saya dapat memfilter dengan benar (positive case)" time="1.014">
         <failure message="Browser yang diberikan tidak didukung: firefox" type="java.lang.IllegalArgumentException"><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............skipped
 When Ketika user di dalaman user dapat melihat "Swag Labs"..................skipped
 And Dan user memasukan UserName "standard_user".............................skipped
@@ -34,7 +34,7 @@ java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firef
 	at stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)
 ]]></failure>
     </testcase>
-    <testcase classname="fungsi login" name="Sebagai pengguna saya dapat login dengan benar (positive case)" time="1.015">
+    <testcase classname="fungsi login" name="Sebagai pengguna saya dapat login dengan benar (positive case)" time="1.01">
         <failure message="Browser yang diberikan tidak didukung: firefox" type="java.lang.IllegalArgumentException"><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............skipped
 When Ketika user di dalaman user dapat melihat "Swag Labs"..................skipped
 And Dan user memasukan UserName "standard_user".............................skipped
@@ -48,7 +48,7 @@ java.lang.IllegalArgumentException: Browser yang diberikan tidak didukung: firef
 	at stepdefenitions.LoginStepDefenition.setUp(LoginStepDefenition.java:38)
 ]]></failure>
     </testcase>
-    <testcase classname="fungsi login" name="Sebagai pengguna saya mendapatkan peringatan jika salah input saat login (negative case)" time="1.018">
+    <testcase classname="fungsi login" name="Sebagai pengguna saya mendapatkan peringatan jika salah input saat login (negative case)" time="1.009">
         <failure message="Browser yang diberikan tidak didukung: firefox" type="java.lang.IllegalArgumentException"><![CDATA[Given Diberikan  user akses halaman "https://www.saucedemo.com/"............skipped
 When Ketika user di dalaman user dapat melihat "Swag Labs"..................skipped
 And Dan user memasukan UserName "standard_user1"............................skipped
