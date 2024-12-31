@@ -3,7 +3,6 @@ package com.simple_web_automation_saucedemo_com.singleton;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverSingleton {
@@ -22,11 +21,6 @@ public class DriverSingleton {
             switch (browser.toLowerCase()) {
                 case "chrome":
                     // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-                    ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--headless");
-                    options.addArguments("--disable-gpu");
-                    options.addArguments("--no-sandbox");
-                    options.addArguments("--disable-dev-shm-usage");
                     driver = new ChromeDriver();
                     break;
                 case "firefox":
