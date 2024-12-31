@@ -23,7 +23,7 @@ public class DriverSingleton {
                 case "chrome":
                     // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--headless"); // Jalankan dalam mode headless
+                    options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu"); // headless
                     driver = new ChromeDriver(options);
                     // driver = new ChromeDriver();
                     break;
