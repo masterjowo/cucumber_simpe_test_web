@@ -30,6 +30,14 @@ pipeline {
         }
         stage('Continuous_Test_Browser ') {
             parallel {
+
+                stage('Firefox'){
+                    steps {
+                        echo 'Running tests on Firefox...'
+                        sh 'mvn test -PTestng  -Dbrowser=firefox'
+                        
+                    }
+                }
                 stage('Chrome'){
                     steps {
                         //sh 'mvn test'/
@@ -38,13 +46,7 @@ pipeline {
                         // sh 'mvn test -Dbrowser=chrome'//
                     }
                 }
-                stage('Firefox'){
-                    steps {
-                        echo 'Running tests on Firefox...'
-                        sh 'mvn test -PTestng  -Dbrowser=firefox'
-                        
-                    }
-                }
+                
 
             }
         }
