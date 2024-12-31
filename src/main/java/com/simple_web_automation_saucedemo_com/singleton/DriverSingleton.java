@@ -3,25 +3,30 @@ package com.simple_web_automation_saucedemo_com.singleton;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverSingleton {
     private static WebDriver driver; // Variabel static untuk instance tunggal
 
-    
     private DriverSingleton() {// Private constructor untuk mencegah instansiasi langsung
-        
-    }
 
+    }
 
     // Metode untuk mendapatkan instance WebDriver
     public static WebDriver getDriver() {
         if (driver == null) { // Jika driver belum dibuat, buat instance baru
-            // driver = new ChromeDriver();// Buat instance ChromeDriver secara tidak dinamis 
+            // driver = new ChromeDriver();// Buat instance ChromeDriver secara tidak
+            // dinamis
             String browser = System.getProperty("browser", "chrome"); // Ambil nilai browser (default chrome)
             switch (browser.toLowerCase()) {
                 case "chrome":
-                    //System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+                    // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless");
+                    options.addArguments("--disable-gpu");
+                    options.addArguments("--no-sandbox");
+                    options.addArguments("--disable-dev-shm-usage");
                     driver = new ChromeDriver();
                     break;
                 case "firefox":
