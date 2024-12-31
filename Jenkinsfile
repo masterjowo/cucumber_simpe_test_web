@@ -43,7 +43,9 @@ pipeline {
                         //sh 'mvn test'/
                         sh 'mvn test -PTestng  -Dbrowser=chrome'
                         echo 'Running tests on Chrome...'
-                        // sh 'mvn test -Dbrowser=chrome'//
+                        sh''' cd target/cucumber-report
+                            LL
+                        '''
                     }
                 }
 
