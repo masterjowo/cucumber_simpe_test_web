@@ -44,7 +44,7 @@ pipeline {
                         sh 'mvn test -PTestng  -Dbrowser=chrome'
                         echo 'Running tests on Chrome...'
                         sh''' cd target/cucumber-report
-                            LL
+                            ls -a 
                         '''
                     }
                 }
