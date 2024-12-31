@@ -3,6 +3,7 @@ package com.simple_web_automation_saucedemo_com.singleton;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverSingleton {
@@ -21,7 +22,9 @@ public class DriverSingleton {
             switch (browser.toLowerCase()) {
                 case "chrome":
                     // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-                    driver = new ChromeDriver();
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless"); // Jalankan dalam mode headless
+                    driver = new ChromeDriver(options);
                     break;
                 case "firefox":
                     // System.setProperty("webdriver.gecko.driver", "path/to/geckodriver");
