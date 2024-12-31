@@ -22,9 +22,10 @@ public class DriverSingleton {
             switch (browser.toLowerCase()) {
                 case "chrome":
                     // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-                    ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--headless"); // Jalankan dalam mode headless
-                    driver = new ChromeDriver(options);
+                    // ChromeOptions options = new ChromeOptions();
+                    // options.addArguments("--headless"); // Jalankan dalam mode headless
+                    // driver = new ChromeDriver(options);
+                    driver = new ChromeDriver();
                     break;
                 case "firefox":
                     // System.setProperty("webdriver.gecko.driver", "path/to/geckodriver");
