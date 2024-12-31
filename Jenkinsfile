@@ -29,7 +29,7 @@ pipeline {
             }
         }
         stage('Continuous_Test_Browser ') {
-            stage('Chrome'){
+
                                 steps {
                                     //sh 'mvn test'/
                                     sh 'mvn test -PTestng  -Dbrowser=chrome'
@@ -38,7 +38,7 @@ pipeline {
                                         ls -a 
                                     '''
                                 }
-                            }
+
         }
 
         stage('Continuous_Build') {
