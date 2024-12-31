@@ -33,7 +33,7 @@ pipeline {
                 stage('Chrome'){
                     steps {
                         //sh 'mvn test'/
-                        sh 'mvn test -PTesting  -Dbrowser=chrome'
+                        sh 'mvn test -PTestng  -Dbrowser=chrome'
                         echo 'Running tests on Chrome...'
                         // sh 'mvn test -Dbrowser=chrome'//
                     }
@@ -41,7 +41,7 @@ pipeline {
                 stage('Firefox'){
                     steps {
                         echo 'Running tests on Firefox...'
-                        sh 'mvn test -PTesting  -Dbrowser=firefox'
+                        sh 'mvn test -PTestng  -Dbrowser=firefox'
                         
                     }
                 }
