@@ -25,8 +25,8 @@
             <artifactId>testng</artifactId>
             <version>7.10.2</version>
             <scope>test</scope>
-        </dependency>
-            <dependency>
+            </dependency>
+        <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>5.2.0</version>
@@ -54,7 +54,6 @@
             <artifactId>selenium-java</artifactId>
             <version>4.27.0</version>
         </dependency>
-
     </dependencies>
      <profiles>
         <profile>
