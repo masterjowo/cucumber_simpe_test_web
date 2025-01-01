@@ -23,16 +23,12 @@ pipeline {
                 // Checkout kode dari repositori
                 git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
                 sh 'pwd'
-                sh''' cd target
-                docker compose down
-                '''
-                
+                sh'docker compose down'
                 sh 'mvn clean install'
             }
         }
         stage('Continuous_Test_Browser ') {
             parallel {
-
                 stage('edge'){
                     steps {
                         echo 'Running tests on edge...'
@@ -50,8 +46,6 @@ pipeline {
                         '''
                     }
                 }
-
-
             }
         }
 
@@ -61,9 +55,7 @@ pipeline {
                     // dir('/Hasil_Test_Web_UI_Mengunakan_Testng_Dan_Cucumber_Versi_Final/target/cucumber-report') {
                     //     sh 'docker compose build'
                     // }
-                    sh''' cd target
-                    docker compose build
-                     '''
+                    sh'docker compose build'
                     
                 }
             }
@@ -73,9 +65,7 @@ pipeline {
             steps {
                 script {
                     // sh 'docker compose up -d'
-                    sh''' cd target
-                    docker compose up -d
-                     '''
+                    sh'docker compose up -d'
                 }
             }
         }
