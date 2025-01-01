@@ -56,7 +56,7 @@ pipeline {
                     //     sh 'docker compose build'
                     // }
                     sh'''
-                        target/cucumber-report
+                        cd target/cucumber-report
                         cat report.js
                     '''
                     sh'docker compose build'
