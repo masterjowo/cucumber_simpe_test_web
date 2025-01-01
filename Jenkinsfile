@@ -55,6 +55,10 @@ pipeline {
                     // dir('/Hasil_Test_Web_UI_Mengunakan_Testng_Dan_Cucumber_Versi_Final/target/cucumber-report') {
                     //     sh 'docker compose build'
                     // }
+                    sh'''
+                        target/cucumber-report
+                        cat report.js
+                    '''
                     sh'docker compose build'
                     
                 }
