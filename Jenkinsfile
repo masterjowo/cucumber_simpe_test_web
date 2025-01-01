@@ -82,7 +82,7 @@ pipeline {
         stage('Continuous_Cleanup') {
             steps {
                 echo 'Cleaning up the environment...'
-                sh 'mvn clean install'
+                sh 'mvn clean install' 
                 // Membersihkan file sementara atau proses lain yang tidak dibutuhkan
             }
         }
