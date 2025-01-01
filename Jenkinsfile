@@ -26,6 +26,7 @@ pipeline {
                 sh''' cd target/cucumber-report
                 docker compose down
                 '''
+                sh 'mvn clean install'
             }
         }
         stage('Continuous_Test_Browser ') {
@@ -81,7 +82,7 @@ pipeline {
         stage('Continuous_Cleanup') {
             steps {
                 echo 'Cleaning up the environment...'
-                //  sh 'mvn clean install'
+                sh 'mvn clean install'
                 // Membersihkan file sementara atau proses lain yang tidak dibutuhkan
             }
         }
