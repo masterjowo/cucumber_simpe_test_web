@@ -59,6 +59,7 @@ pipeline {
                         cd target/cucumber-report
                         cat report.js
                     '''
+                    echo 'report.js error '
                     sh'docker compose build'
                     
                 }
