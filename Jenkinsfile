@@ -58,7 +58,7 @@ pipeline {
                     sh'''
                         cd target/cucumber-report
                         cat report.js
-                        cat rormatter.js
+                        cat formatter.js
                         cat index.html
                         cat jquery-3.5.1.min.js
                     '''
