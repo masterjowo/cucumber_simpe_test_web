@@ -23,8 +23,8 @@ pipeline {
                 // Checkout kode dari repositori
                 git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
                 sh 'pwd'
-                sh'docker compose down'
-                //sh 'mvn clean install'
+                //sh'docker compose down'
+                sh 'mvn clean install'
             }
         }
         stage('Continuous_Test_Browser ') {
