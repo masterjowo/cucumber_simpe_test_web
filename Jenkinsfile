@@ -24,7 +24,7 @@ pipeline {
                 git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
                 sh 'pwd'
                 sh'docker compose down'
-                sh 'mvn clean install'
+                //sh 'mvn clean install'
             }
         }
         stage('Continuous_Test_Browser ') {
@@ -58,6 +58,10 @@ pipeline {
                     sh'''
                         cd target/cucumber-report
                         cat report.js
+                        cat formatter.js
+                        cat jquery-3.4.1.min.js
+                        cat style.css
+                        cat index.html
                     '''
                     echo 'report.js error '
                     sh'docker compose build'
@@ -78,7 +82,7 @@ pipeline {
         stage('Continuous_Cleanup') {
             steps {
                 echo 'Cleaning up the environment...'
-                sh 'mvn clean install' 
+                // sh 'mvn clean install' 
                 // Membersihkan file sementara atau proses lain yang tidak dibutuhkan
             }
         }
