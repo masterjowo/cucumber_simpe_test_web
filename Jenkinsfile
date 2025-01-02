@@ -5,56 +5,63 @@ pipeline {
         // Definisikan variabel lingkungan jika diperlukan
         // Misalnya untuk kredensial, server, dll.
         DEPLOY_SERVER = 'your.deploy.server'
-        BRANCH_NAME = 'main'
+        BRANCH_NAME = 'master'
     }
-    triggers{
-        //https://crontab.guru/
-        pollSCM('* * * * *')
+        tools {
+        maven "MAVEN"
+        jdk "JDK"
+    }
 
+    triggers{
+        //https://crontab.guru///
+        pollSCM('* * * * *')
     }
 
     stages {
-        // stage('Continuous_Checkout') {
-        //     steps {
-        //         // Checkout kode dari repositori
-        //         git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
-        //     }
-        // }
-
-
-
-
+        stage('Continuous_Checkout') {
+            steps {
+                // Checkout kode dari repositori
+                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
+                sh 'pwd'
+                sh'docker compose down'
+                sh 'mvn clean install'
+            }
+        }
         stage('Continuous_Test_Browser ') {
             parallel {
+                stage('edge'){
+                    steps {
+                        echo 'Running tests on edge...'
+                        sh 'mvn test -PTestng  -Dbrowser=edge'
+                        
+                    }
+                }
                 stage('Chrome'){
                     steps {
-                        sh 'pwd'
+                        //sh 'mvn test'/
+                        sh 'mvn test -PTestng  -Dbrowser=chrome'
                         echo 'Running tests on Chrome...'
-                        // sh 'mvn test -Dbrowser=chrome'
+                        sh''' cd target/cucumber-report
+                            ls -a 
+                        '''
                     }
                 }
-                stage('Firefox'){
-                    steps {
-                        echo 'Running tests on Chrome...'
-                        echo 'Running tests on Firefox...'
-                        // sh 'mvn test -Dbrowser=chrome'
-                    }
-                }
-
             }
         }
 
         stage('Continuous_Build') {
             steps {
                 script {
-                    // Simulasi proses build
-                    // echo 'Building the project...'
-                    sh 'mvn clean install'
-                    // Contoh build, misalnya menggunakan Maven, Gradle, atau npm
-                    // sh 'echo "Simulating build... build completed!"'
-                            
-                    // Contoh dengan Maven:
-                    // sh 'mvn clean package'
+                    // dir('/Hasil_Test_Web_UI_Mengunakan_Testng_Dan_Cucumber_Versi_Final/target/cucumber-report') {
+                    //     sh 'docker compose build'
+                    // }
+                    sh'''
+                        cd target/cucumber-report
+                        cat report.js
+                    '''
+                    echo 'report.js error '
+                    sh'docker compose build'
+                    
                 }
             }
         } 
@@ -62,18 +69,8 @@ pipeline {
         stage('Continuous_Deploy_report_html') {
             steps {
                 script {
-                    // Simulasi proses deployment ke server
-                    // echo "Deploying to ${env.DEPLOY_SERVER}..."
-                    
-                    // Misalnya menggunakan SSH atau SCP untuk mengirim file ke server
-                    sh 'echo "Simulating deploy... deployment success!"'
-                    sh 'echo "Simulating deploy... deployment success!"'
-                    
-                    // Contoh perintah deploy:
-                    // sh 'scp target/your-artifact.jar user@${env.DEPLOY_SERVER}:/path/to/deploy/'
-
-                    // Jika menggunakan Ansible atau Docker:
-                    // sh 'ansible-playbook deploy.yml'
+                    // sh 'docker compose up -d'
+                    sh'docker compose up -d'
                 }
             }
         }
@@ -81,6 +78,7 @@ pipeline {
         stage('Continuous_Cleanup') {
             steps {
                 echo 'Cleaning up the environment...'
+                sh 'mvn clean install' 
                 // Membersihkan file sementara atau proses lain yang tidak dibutuhkan
             }
         }
@@ -103,4 +101,7 @@ pipeline {
             echo 'Pipeline selesai menjalankan semua tahap.'
         }
     }
+
+//https://www.jenkins.io/doc/pipeline/steps/workflow-basic-steps/#pwd-determine-current-directory
 }
+

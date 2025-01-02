@@ -1,0 +1,5 @@
+stepdefenitions\Data_Sementaras.class
+stepdefenitions\LoginStepDefenition.class
+stepdefenitions\FilterStepDefenition.class
+runners\TestRunner.class
+stepdefenitions\CheckoutDefenition.class

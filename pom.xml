@@ -11,6 +11,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.github.cdimascio/java-dotenv -->
@@ -20,13 +21,13 @@
             <version>5.2.2</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-        <dependency>
+        <!-- <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.10.2</version>
             <scope>test</scope>
-        </dependency>
-            <dependency>
+            </dependency> -->
+        <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>5.2.0</version>
@@ -54,7 +55,7 @@
             <artifactId>selenium-java</artifactId>
             <version>4.27.0</version>
         </dependency>
-        <dependency>
+                <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.4.0</version>
@@ -62,5 +63,24 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+     <profiles>
+        <profile>
+            <id>Testng</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.0.0-M5</version>
+                        <configuration>
+                            <suiteXMLFiles>
+                                <suiteXmlFile>testSuites/testng.xml</suiteXmlFile>
+                            </suiteXMLFiles>
+                        </configuration>
+                    </plugin>
+            </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>
