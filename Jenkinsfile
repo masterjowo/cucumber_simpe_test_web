@@ -60,7 +60,7 @@ pipeline {
                         cat report.js
                         cat formatter.js
                         cat index.html
-                        cat jquery-3.5.1.min.js
+                        cat jquery-3.4.1.min.js
                     '''
                     echo 'report.js error '
                     sh'docker compose build'
