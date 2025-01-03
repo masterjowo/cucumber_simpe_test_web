@@ -28,7 +28,17 @@ pipeline {
             }
         }
         stage('Continuous_Test_Browser ') {
-            steps {
+            parallel {
+                stage('edge'){
+                    steps {
+                        echo 'Running tests on edge...'
+                        sh 'mvn test -PTestng  -Dbrowser=edge'
+                        sh 'mvn clean install'
+                        
+                    }
+                }
+                stage('Chrome'){
+                    steps {
                         //sh 'mvn test'/
                         sh 'mvn test -PTestng  -Dbrowser=chrome'
                         echo 'Running tests on Chrome...'
@@ -36,6 +46,8 @@ pipeline {
                             ls -a 
                         '''
                     }
+                }
+            }
         }
 
         stage('Continuous_Build') {
