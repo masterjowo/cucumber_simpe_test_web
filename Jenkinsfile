@@ -28,17 +28,7 @@ pipeline {
             }
         }
         stage('Continuous_Test_Browser ') {
-            parallel {
-                stage('edge'){
-                    steps {
-                        echo 'Running tests on edge...'
-                        sh 'mvn test -PTestng  -Dbrowser=edge'
-                        sh 'mvn clean install'
-                        
-                    }
-                }
-                stage('Chrome'){
-                    steps {
+            steps {
                         //sh 'mvn test'/
                         sh 'mvn test -PTestng  -Dbrowser=chrome'
                         echo 'Running tests on Chrome...'
@@ -46,8 +36,25 @@ pipeline {
                             ls -a 
                         '''
                     }
-                }
-            }
+            // parallel { // Menjalankan beberapa tahap secara paralel akan mengakibatkan cucumber-report terimpa dan menjadi error pada report.js
+            //     stage('edge'){
+            //         steps {
+            //             echo 'Running tests on edge...'
+            //             sh 'mvn test -PTestng  -Dbrowser=edge'
+                        
+            //         }
+            //     }
+            //     stage('Chrome'){
+            //         steps {
+            //             //sh 'mvn test'/
+            //             sh 'mvn test -PTestng  -Dbrowser=chrome'
+            //             echo 'Running tests on Chrome...'
+            //             sh''' cd target/cucumber-report
+            //                 ls -a 
+            //             '''
+            //         }
+            //     }
+            // }
         }
 
         stage('Continuous_Build') {
