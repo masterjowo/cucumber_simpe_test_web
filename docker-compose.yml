@@ -5,5 +5,5 @@ services:
       dockerfile: dockerfile
     image: hasil_test_web_saucedemo_comv1 # Menentukan nama image secara spesifik
     ports:
-      - "9478:80" # Port host 8080 ke port container 80
+      - "9432:80" # Port host 8080 ke port container 80
     container_name: hasil_test_web_saucedemo_comv1 # Nama container 
