@@ -13,10 +13,10 @@ import io.cucumber.junit.CucumberOptions;
                 glue = { "stepdefenitions" }, // Lokasi step definitions. Cucumber memahami bahwa ini merujuk ke package
                                               // Java stepdefenitions, bukan direktori file di sistem file.
                 plugin = {
-                                "pretty", // Output konsol yang rapi
-                                "html:target/cucumber-report", // HTML report
-                                "json:target/cucumber-report.json", // JSON report
-                                "junit:target/cucumber-report.xml" // JUnit XML report
+                        "pretty", // Output konsol yang rapi
+                        "html:target/cucumber-report", // HTML report
+                        "json:target/cucumber-report.json", // JSON report
+                        "junit:target/cucumber-report.xml" // JUnit XML report
                 }
 
 )
