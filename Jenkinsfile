@@ -31,7 +31,7 @@ pipeline {
             steps {
                         //sh 'mvn test'/
                         echo 'Running tests on edge...'
-            //             sh 'mvn test -PTestng  -Dbrowser=edge'
+                        sh 'mvn test -PTestng  -Dbrowser=edge'
                     }
         }
         stage('Continuous_Test_Browser_Chrome ') {
