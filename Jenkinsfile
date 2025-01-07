@@ -27,7 +27,14 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        stage('Continuous_Test_Browser ') {
+        stage('Continuous_Test_Browser_Edge ') {
+            steps {
+                        //sh 'mvn test'/
+                        echo 'Running tests on edge...'
+            //             sh 'mvn test -PTestng  -Dbrowser=edge'
+                    }
+        }
+        stage('Continuous_Test_Browser_Chrome ') {
             steps {
                         //sh 'mvn test'/
                         sh 'mvn test -PTestng  -Dbrowser=chrome'
