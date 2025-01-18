@@ -1,12 +1,10 @@
 Feature: fungsi login
   Description: Kami akan menguji beberapa skenario menerapkan Tes E2E pada web site https://www.saucedemo.com/ mengunakan cucumber, testng , dan jenkins 
-  # Beckground:
-  #   Given Diberikan user akses halaman "https://www.saucedemo.com/"
 
   @Sprint2B @TestCase1
   Scenario: Sebagai pengguna saya dapat login dengan benar (positive case)
     Given Diberikan  user akses halaman "https://www.saucedemo.com/"
-    When Ketika user di dalaman user dapat melihat "Swag Labs"
+    When Ketika user sudah berada pada halaman awal, user dapat melihat "Swag Labs"
     And Dan user memasukan UserName "standard_user"
     And Dan user memasukan password "secret_sauce"
     And Dan user menekan tombol login
@@ -15,7 +13,7 @@ Feature: fungsi login
   @Sprint2B @TestCase2
   Scenario: Sebagai pengguna saya mendapatkan peringatan jika salah input saat login (negative case)
     Given Diberikan  user akses halaman "https://www.saucedemo.com/"
-    When Ketika user di dalaman user dapat melihat "Swag Labs"
+    When Ketika user sudah berada pada halaman awal, user dapat melihat "Swag Labs"
     And Dan user memasukan UserName "standard_user1"
     And Dan user memasukan password "secret_sauce"
     And Dan user menekan tombol login

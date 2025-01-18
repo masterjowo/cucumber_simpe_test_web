@@ -51,12 +51,6 @@ public class LoginStepDefenition {
         driver.get(string);
     }
 
-    @When("Ketika user di dalaman user dapat melihat {string}")
-    public void ketika_user_di_dalaman_user_dapat_melihat(String string) {
-        Assert.assertEquals(string, obj.pagetitle());
-        // System.out.println("dsadsadsadasd"+driver.getCurrentUrl()); 
-    }
-
     @When("Dan user memasukan UserName {string}")
     public void dan_user_memasukan_UserName(String string) {
         obj.InputUserName(string);
@@ -83,6 +77,11 @@ public class LoginStepDefenition {
             Assert.assertTrue(obj.ConditionSuccessOrFailure(URL.getTitik_url().equals(driver.getCurrentUrl())) != null);// operator ternary
             System.out.println("gagal"+ obj.ConditionSuccessOrFailure(URL.getTitik_url().equals(driver.getCurrentUrl())));
         }
+    }
+
+    @When("Ketika user sudah berada pada halaman awal, user dapat melihat {string}")
+    public void Ketika_user_sudah_berada_pada_halaman_awal_user_dapat_melihat(String string) {
+        Assert.assertEquals(string, obj.pagetitle());
     }
 
 }
