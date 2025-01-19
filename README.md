@@ -43,10 +43,10 @@ mvn clean install
 
 ```
 cucumber_simpe_test_web
-│   pom.xml 																					# File konfigurasi Maven
+│   pom.xml             # File konfigurasi Maven
 │   
 ├───src
-│   ├───main 																					# Kode utama (Berisi pageobjects, dan Singleton Pattern)
+│   ├───main                # Kode utama (Berisi pageobjects, dan Singleton Pattern)
 │   │   ├───java
 │   │   │   └───com
 │   │   │       └───simple_web_automation_saucedemo_com
@@ -67,16 +67,16 @@ cucumber_simpe_test_web
 │   │   └───resources
 │   └───test
 │       ├───java
-│       │   ├───runners 																		# Test runner Cucumber + TestNG
+│       │   ├───runners             # Test runner Cucumber + TestNG
 │       │   │       TestRunner.java
 │       │   │
-│       │   └───stepdefenitions 																# Definisi langkah Gherkin
+│       │   └───stepdefenitions             # Definisi langkah Gherkin
 │       │           CheckoutDefenition.java
 │       │           FilterStepDefenition.java
 │       │           LoginStepDefenition.java
 │       │
 │       └───resources
-│           └───features  																		# File fitur Gherkin (*.feature)
+│           └───features                # File fitur Gherkin (*.feature)
 │                   Checkout.feature
 │                   Filter.feature
 │                   Login.feature
@@ -94,7 +94,7 @@ cucumber_simpe_test_web
 │   │       style.css
 │
 └───testSuites
-        testng.xml 										                                        # Konfigurasi TestNG
+        testng.xml              # Konfigurasi TestNG
 ```
 
 ---
