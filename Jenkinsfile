@@ -8,8 +8,8 @@ pipeline {
         BRANCH_NAME = 'master'
     }
         tools {
-        maven "MAVEN"
-        jdk "JDK"
+        maven 'Maven_3.8.7'
+        jdk '21.0.6'
     }
 
     triggers{
