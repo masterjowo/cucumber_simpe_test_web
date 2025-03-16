@@ -8,7 +8,7 @@ pipeline {
         BRANCH_NAME = 'master'
     }
         tools {
-        maven 'Maven_3.8.7'
+        Maven '3.8.7'
         jdk '21.0.6'
     }
 
