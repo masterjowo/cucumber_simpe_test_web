@@ -116,14 +116,12 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Dan user menekan tombol finish",
+  "name": "Dan user menekan tombol finishk",
   "keyword": "And "
 });
-formatter.match({
-  "location": "stepdefenitions.CheckoutDefenition.dan_user_menekan_tombol_finish()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
   "name": "Maka user dapat melihat pemberitahuan \"Thank you for your order!\"",
@@ -133,7 +131,7 @@ formatter.match({
   "location": "stepdefenitions.CheckoutDefenition.maka_user_dapat_melihat_pemberitahuan(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
   "status": "passed"
