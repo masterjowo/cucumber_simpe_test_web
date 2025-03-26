@@ -12,10 +12,10 @@ pipeline {
         jdk '21.0.6'
     }
 
-    triggers{
-        //https://crontab.guru///
-        pollSCM('* * * * *')
-    }
+    // triggers{
+    //     //https://crontab.guru///
+    //     pollSCM('* * * * *')
+    // }
 
     stages {
         stage('Continuous_Checkout') {
