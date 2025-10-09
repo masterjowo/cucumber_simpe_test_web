@@ -8,9 +8,9 @@ pipeline {
         BRANCH_NAME = 'master'
     }
         tools {
-        maven '3.8.7'
-        jdk '21.0.6'
-    }
+    maven 'Maven3'
+    jdk 'JDK17'
+}
 
     // triggers{
     //     //https://crontab.guru///
