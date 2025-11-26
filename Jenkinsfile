@@ -22,6 +22,7 @@ pipeline {
                 git branch: "${env.BRANCH_NAME}", url: 'https://github.com/masterjowo/cucumber_simpe_test_web.git'
                 sh 'pwd'
                 sh'docker compose down'
+                sh'docker rmi hasil_test_web_saucedemo_comv1'
                 sh 'mvn clean install'
             }
         }
