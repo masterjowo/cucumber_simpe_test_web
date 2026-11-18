@@ -8,6 +8,10 @@ pipeline {
         DEPLOY_SERVER = 'your.deploy.server'
         BRANCH_NAME = 'master'
     }
+    tools {
+        // Sesuaikan 'Maven_3.9' dengan nama yang Anda buat di Global Tool Configuration
+        maven 'Maven_3.9' 
+    }
 
 
     // triggers{
